@@ -24,16 +24,16 @@ body {
 	font-weight: 700;
 	position: relative;
 	&:hover {
-		background:#ca2c37;
+		background:#eb2834;
 		&:after {
-			background:#9a212a;
+			background:#B41B26;
 		}
 	}
 	&:after {
 		content: '';
 		position: absolute;
 		width: 100%;
-		background: #d32430;
+		background: #D32430;
 		height: 5px;
 		bottom: -5px;
 		left: 0;
@@ -49,25 +49,24 @@ body {
 .search {
 	float: left;
 	width: 27.6594%;
-
 	&:hover {
 		background:#212a3a;
 	}
-
-	
-
+	@media screen and (max-width: 746px) {
+		float: none;
+		display: block;
+		width: 100%;
+	}
 	&__btn {
 		color: $top-color-ico;
 		border: none;
 		background: none;
 		cursor: pointer;
-
 		i {
 			font-size: 1.063em;
 			line-height: 1.125em;
 		}
 	}
-
 	&__input {
 		width: 79.5833%;
 		font-size: 1.063em;
@@ -81,10 +80,20 @@ body {
 			border: none;
 			outline: none;
 		}
+		@media screen and (max-width: 746px) {
+		}
 	}
 }
 .shop-cart__wrapper {
 	float: right;
+	@media screen and (max-width: 746px) {
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}
+	@media screen and (max-width: 455px) {
+		display: block;
+	}
 }
 
 .bookmak,
@@ -93,15 +102,18 @@ body {
 	float: left;
 	font-size: 1.063em;
 	line-height: 1.063em;
+	@media screen and (max-width: 455px) {
+		display: block;
+		float: none;
+		text-align: center;
+	}
 }
 
 .bookmak {
 	padding: 14px 20px;
-
 	i {
 		color: $top-color-ico;
 	}
-
 	a {
 		color: $white-text;
 		text-decoration: none;
@@ -109,11 +121,9 @@ body {
 			color: #999ca1;
 		}
 	}
-
 	&:hover {
 		background:$top-bar-hover;
 	}
-
 	&:active {
 		background:#161d29;
 	}
@@ -121,11 +131,9 @@ body {
 
 .cart {
 	padding: 14px 20px;
-
 	i {
 		color: $top-color-ico;
 	}
-
 	a {
 		color: $white-text;
 		text-decoration: none;
@@ -133,11 +141,9 @@ body {
 			color: #999ca1;
 		}
 	}
-
 	&:hover {
 		background:$top-bar-hover;
 	}
-
 	&:active {
 		background:#161d29;
 	}
@@ -148,14 +154,13 @@ body {
 		text-decoration: none;
 		color: $white-text;
 		display: block;
-		background: #63a63e;
+		background: #26a730;
 		padding: 15px 20px;
-
 		&:hover {
-			background:#5fbb2d;
+			background: #00BC04;
 		}
 		&:active {
-			background:#518534;
+			background: #238628;
 			color: #b5c8ad;
 		}
 	}
@@ -168,6 +173,12 @@ body {
 
 .header-slogan-block {
 	padding-left: 50px;
+	@media screen and (max-width: 768px) {
+		padding-left: 0;
+	}
+	@media screen and (max-width: 560px) {
+		display: none;
+	}
 }
 .slogan-text {
 	color: #ee3643;
@@ -177,7 +188,12 @@ body {
 	margin-top: 0;
 }
 
-.header-info-block {}
+.header-info-block {
+	@media screen and (max-width: 466px) {
+		float: none;
+		text-align: center;
+	}
+}
 .tel {}
 .tel-number {
 	width: 73.3333%;
@@ -194,10 +210,17 @@ body {
 .header-adress {
 	color: #32425c;
 	margin-left: 18px;
+	@media screen and (max-width: 466px) {
+		margin-left: 0;
+	}
 }
 
 .login-wrapper {
 	float: right;
+	@media screen and (max-width: 925px) {
+		float: none;
+		text-align: center;
+	}
 }
 .acnt-login,
 .actn-reg {
@@ -206,26 +229,33 @@ body {
 	font-size: 1.313em;
 	background:#fff;
 	padding: 8px 20px;
-
 	&:hover {
 		color: #ee3643;
 	}
-
 	&:active {
 		color: #c5c5c5;
+	}
+	@media screen and (max-width: 925px) {
+		display: block;
+		width: 100%;
 	}
 }
 .acnt-login {
 	i {
 		color: #c5c5c5;
 	}
-
 	&:hover i {
 		color: #32425c;
+	}
+	@media screen and (max-width: 925px) {
+		margin-bottom: 20px;
 	}
 }
 .actn-reg {
 	margin-left: 10px;
+	@media screen and (max-width: 925px) {
+		margin-left: 0;
+	}
 }
 
 // МЕНЮ

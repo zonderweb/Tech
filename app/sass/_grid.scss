@@ -17,12 +17,30 @@
 
 .header-slogan-block {
 	@include span(4);
+	@media screen and (max-width: 768px) {
+		@include span(3);
+	}
 }
 .header-info-block {
 	@include span(4);
+	@media screen and (max-width: 768px) {
+		@include span(5);
+	}
+	@media screen and (max-width: 560px) {
+		@include span(6);
+	}
+	@media screen and (max-width: 466px) {
+		@include span(12);
+	}
 }
 .account-block {
 	@include span(4 last);
+	@media screen and (max-width: 560px) {
+		@include span(6 last);
+	}
+	@media screen and (max-width: 466px) {
+		@include span(12);
+	}
 }
 
 .widget-materials,

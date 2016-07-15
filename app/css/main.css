@@ -40,16 +40,48 @@
   width: 31.915%;
   float: left;
   margin-right: 2.1275%; }
+  @media screen and (max-width: 768px) {
+    .header-slogan-block {
+      width: 23.40438%;
+      float: left;
+      margin-right: 2.1275%; } }
 
 .header-info-block {
   width: 31.915%;
   float: left;
   margin-right: 2.1275%; }
+  @media screen and (max-width: 768px) {
+    .header-info-block {
+      width: 40.42563%;
+      float: left;
+      margin-right: 2.1275%; } }
+  @media screen and (max-width: 560px) {
+    .header-info-block {
+      width: 48.93625%;
+      float: left;
+      margin-right: 2.1275%; } }
+  @media screen and (max-width: 466px) {
+    .header-info-block {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .account-block {
   width: 31.915%;
   float: right;
   margin-right: 0; }
+  @media screen and (max-width: 560px) {
+    .account-block {
+      width: 48.93625%;
+      float: right;
+      margin-right: 0; } }
+  @media screen and (max-width: 466px) {
+    .account-block {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .widget-materials,
 .widget-tool {
@@ -196,14 +228,14 @@ body {
   font-weight: 700;
   position: relative; }
   .logo:hover {
-    background: #ca2c37; }
+    background: #eb2834; }
     .logo:hover:after {
-      background: #9a212a; }
+      background: #B41B26; }
   .logo:after {
     content: '';
     position: absolute;
     width: 100%;
-    background: #d32430;
+    background: #D32430;
     height: 5px;
     bottom: -5px;
     left: 0; }
@@ -222,6 +254,11 @@ body {
   width: 27.6594%; }
   .search:hover {
     background: #212a3a; }
+  @media screen and (max-width: 746px) {
+    .search {
+      float: none;
+      display: block;
+      width: 100%; } }
   .search__btn {
     color: #6a7180;
     border: none;
@@ -245,6 +282,14 @@ body {
 
 .shop-cart__wrapper {
   float: right; }
+  @media screen and (max-width: 746px) {
+    .shop-cart__wrapper {
+      float: none;
+      display: table;
+      margin: 0 auto; } }
+  @media screen and (max-width: 455px) {
+    .shop-cart__wrapper {
+      display: block; } }
 
 .bookmak,
 .cart,
@@ -252,6 +297,13 @@ body {
   float: left;
   font-size: 1.063em;
   line-height: 1.063em; }
+  @media screen and (max-width: 455px) {
+    .bookmak,
+    .cart,
+    .checkout {
+      display: block;
+      float: none;
+      text-align: center; } }
 
 .bookmak {
   padding: 14px 20px; }
@@ -285,12 +337,12 @@ body {
   text-decoration: none;
   color: #fff;
   display: block;
-  background: #63a63e;
+  background: #26a730;
   padding: 15px 20px; }
   .checkout a:hover {
-    background: #5fbb2d; }
+    background: #00BC04; }
   .checkout a:active {
-    background: #518534;
+    background: #238628;
     color: #b5c8ad; }
 
 .header-center {
@@ -298,6 +350,12 @@ body {
 
 .header-slogan-block {
   padding-left: 50px; }
+  @media screen and (max-width: 768px) {
+    .header-slogan-block {
+      padding-left: 0; } }
+  @media screen and (max-width: 560px) {
+    .header-slogan-block {
+      display: none; } }
 
 .slogan-text {
   color: #ee3643;
@@ -305,6 +363,11 @@ body {
   font-size: 1em;
   line-height: 1.438em;
   margin-top: 0; }
+
+@media screen and (max-width: 466px) {
+  .header-info-block {
+    float: none;
+    text-align: center; } }
 
 .tel-number {
   width: 73.3333%;
@@ -319,9 +382,16 @@ body {
 .header-adress {
   color: #32425c;
   margin-left: 18px; }
+  @media screen and (max-width: 466px) {
+    .header-adress {
+      margin-left: 0; } }
 
 .login-wrapper {
   float: right; }
+  @media screen and (max-width: 925px) {
+    .login-wrapper {
+      float: none;
+      text-align: center; } }
 
 .acnt-login,
 .actn-reg {
@@ -336,6 +406,11 @@ body {
   .acnt-login:active,
   .actn-reg:active {
     color: #c5c5c5; }
+  @media screen and (max-width: 925px) {
+    .acnt-login,
+    .actn-reg {
+      display: block;
+      width: 100%; } }
 
 .acnt-login i {
   color: #c5c5c5; }
@@ -343,8 +418,15 @@ body {
 .acnt-login:hover i {
   color: #32425c; }
 
+@media screen and (max-width: 925px) {
+  .acnt-login {
+    margin-bottom: 20px; } }
+
 .actn-reg {
   margin-left: 10px; }
+  @media screen and (max-width: 925px) {
+    .actn-reg {
+      margin-left: 0; } }
 
 .menu-box {
   padding-bottom: 60px; }
