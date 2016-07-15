@@ -1,0 +1,101 @@
+.hiden-form {
+	display: none;
+}
+.form-popup {
+		position: relative;
+}
+.form__wrapper {
+	background: #fff;
+	border-top: 7px solid $logo-red;
+	box-shadow: 0px 16px 30px 4px rgba(0,0,0,0.75);
+
+}
+// кнопка закрыть из скрипта magnific-popup
+button.mfp-close {
+	position: absolute;
+	top: 7px;
+	right: 20%;
+}
+
+.form-write-us {
+	font-size: 1.125em;
+}
+.input-form__wrapper {
+	@include cf;
+	padding: 48px 12.9032% 37px 12.9032%;
+
+	input[type="text"],
+	textarea {
+		border: 2px solid #d7dcde;
+		border-radius: 3px;
+		font-family: $font-sans;
+		font-size: 0.813em;
+		line-height: 1.125em;
+		padding: 7px 15px;
+		color: #999;
+		&:focus {
+			border-color: #f47d85;
+			outline: none;
+		}
+	}
+	input[type="text"],
+	textarea {
+		width: 100%;
+	}
+	textarea {
+		min-height: 110px;
+	}
+}
+.inp-name__wrapper {
+	float:left;
+}
+.inp-name__wrapper,
+.inp-email__wrapper{
+	width: 47.8260%;
+}
+.inp-email__wrapper {
+	float: right;
+}
+.inp-textarea__wrapper {
+	@include break;
+}
+.btn-form-wrapper {
+	background: #F1F1F1;
+	padding: 37px 12.9032%;
+}
+.inp-textarea__wrapper {
+	padding-top: 20px;
+}
+.input-title {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.btn-form-wrapper {
+	@include cf;
+	button {
+		@include btnred;
+		width: 47.8260%;
+		float: right;
+		background: #fff;
+		border: none;
+		color: #000;
+		cursor: pointer;
+	}
+	.btn-push {
+		@include btnred;
+		float: left;
+	}
+	.btn-push {
+		&:hover {
+			@include btnred-hover;
+		}
+		&:active {
+			@include btnred-active;
+		}
+	}
+}
+// bg для заднего фона всплывающей формы
+.mfp-bg {
+	background: transparent;
+	opacity: none;
+}

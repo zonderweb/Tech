@@ -1,0 +1,28 @@
+// Classic clearfix
+@mixin cf {
+	&:after {
+		content:"";
+		display: block;
+		clear: both;
+	}
+}
+// красная кнопка
+@mixin btnred {
+	color: $white-text;
+	text-transform: uppercase;
+	background: $main-red;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-decoration: none;
+	border-radius: 3px;
+	font-size: 0.875em;
+	line-height: 1.125em;
+}
+// красная кнопка наведение
+@mixin btnred-hover {
+	background: $main-red-hover;
+}
+// красная кнопка клик
+@mixin btnred-active {
+	background: $main-red-active;
+}

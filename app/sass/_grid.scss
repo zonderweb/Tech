@@ -1,0 +1,105 @@
+.top-panel__wrapper,
+.header-center,
+.menu-box,
+.widget-row,
+.slider-row,
+.pop-product__box,
+.pop-product__cartwrapper,
+.gallery-brand__wrapper,
+.services-header,
+.servises-tab,
+.info-company__wrapper,
+.footer-top__wrapper,
+.footer-bottom__wrapper {
+	@include container();
+	padding: 0 0.625em;
+}
+
+.header-slogan-block {
+	@include span(4);
+}
+.header-info-block {
+	@include span(4);
+}
+.account-block {
+	@include span(4 last);
+}
+
+.widget-materials,
+.widget-tool {
+	@include span(4);
+}
+.widget-equipment {
+	@include span(4 last);
+}
+
+.slider-wrapper {
+	@include span(8);
+}
+.widget-wrapper {
+	@include span(4 last);
+}
+
+.cart__product {
+	@include span(3);
+	&:nth-child(4) {
+		@include span(3 last)
+	}
+}
+
+.gallery-brand__item {
+	@include span(3);
+	&:nth-child(4) {
+		@include span(3 last);
+	}
+	&:nth-child(8) {
+		@include span(3 last);
+	}
+}
+.tab-items {
+	@include span(3 wide);
+}
+.tab-body {
+	@include span(9 last);
+}
+.tab-info__wrapper {
+	@include span(5 of 8);
+}
+.tab-img {
+	@include span(3 of 8 last);
+}
+.info-main {
+	@include span(7);
+}
+.contacts-main {
+	@include span(5 last);
+}
+.footer-adress {
+	@include span(4);
+	padding-right: span(1);
+}
+.footer-menu {
+	@include span(8 last);
+	padding-left: span(1);
+}
+.site-info {
+	@include span(5);
+}
+.social-btn {
+	@include span(3);
+}
+.feedback-info {
+	@include span(2);
+}
+.desing-info {
+	@include span(2 last);
+}
+.form-popup {
+	@include container();
+	padding: 0 0.625em;
+}
+.form__wrapper {
+	@include span(8);
+	margin-left: span(2);
+	margin-right: span(2);
+}

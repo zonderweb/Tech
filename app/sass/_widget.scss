@@ -1,0 +1,166 @@
+.main {
+	margin-top: 60px;
+	background: #fff;
+}
+.top-promo {
+	margin-bottom: 53px;
+}
+.widget-row {
+	margin-bottom: gutter();
+}
+
+.widget-materials,
+.widget-tool,
+.widget-equipment,
+.widget-discounts,
+.widget-shiping {
+	padding: 25px 25px 20px 25px;
+}
+.widget-materials {
+	background:$w-materials;
+	position: relative;
+}
+.widget-tool {
+	background:$w-tool;
+}
+.widget-equipment {
+	background:$w-equipment;
+}
+.widget-discounts {
+	background:$w-discounts;
+	margin-bottom: span(1);
+}
+.widget-shiping {
+	background:$w-shiping;
+}
+
+.widget__title {
+	margin: 0;
+	font-size: 1.500em;
+	color: $white-text;
+	margin-bottom: 15px;
+}
+.widget__link {
+	text-decoration: none;
+	color: $white-text;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	line-height: 1.125em;
+	background:rgba(0, 0, 0, .1);
+	padding: 10px 20px;
+	display: inline-block;
+	border-radius: 3px;
+
+	&:hover {
+		background:rgba(0, 0, 0, .2);
+	}
+	&:active {
+		background:rgba(0, 0, 0, .3);
+	}
+}
+
+.widget__img {
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+
+// СЛАЙДЕР
+.slider-wrapper {
+	position: relative;
+}
+.slider-box {
+	position: relative;
+	height: 266px;
+}
+.sl-bg {
+	&__1 {
+		background:transparent url('../img/slider_1.jpg') center top no-repeat;
+	}
+	&__2 {
+		background:transparent url('../img/slider_2.jpg') center top no-repeat;
+	}
+	&__1,
+	&__2 {
+		background-size: cover;
+	}
+}
+
+.slider-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .25);
+	padding: 27px 23px 25px 23px;
+	color: $white-text;
+}
+.slider__title {
+	margin: 0;
+	font-size: 2.250em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.slider__text {
+	margin: 0;
+	font-size: 1em;
+	font-family: $font-sans;
+}
+.slider__link {
+	@include btnred;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 12px 45px;
+	margin-bottom: 25px;
+	margin-left: 23px;
+
+	&:hover {
+		@include btnred-hover;
+	}
+	&:active {
+		@include btnred-active;
+	}
+}
+
+.slider-nav {}
+
+.slick-prev,
+.slick-next {
+	border: none;
+	position: absolute;
+	bottom: 38%;
+	z-index: 999;
+	display: block;
+	padding: 0;
+	font-size: 2.500em;
+	color: $white-text;
+	cursor: pointer;
+}
+
+.slick-prev {
+	left: 8px;
+}
+.slick-next {
+	right: 8px;
+}
+
+.owl-dots {
+	position: absolute;
+	left: 50%;
+	bottom: 35px;
+}
+
+.owl-dot {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background: $white-text;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.owl-dots .active {
+	background: #ee3643;
+	border: 2px solid $white-text;
+}

@@ -1,0 +1,17 @@
+.pop-brand {
+	margin-bottom: 65px;
+}
+.gallery-brand__item {
+	border: 1px solid #e5e5e5;
+	margin-bottom: gutter();
+	&:hover {
+		box-shadow: 0px 6px 24px 0px rgba(41,52,73,0.5);
+	}
+	&:active {
+		box-shadow: 0px 0px 14px 0px rgba(41,52,73,0.5);
+		opacity: .3;
+	}
+	img {
+		width: 100%;
+	}
+}
