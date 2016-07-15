@@ -278,6 +278,9 @@ body {
 		padding-top: 20px;
 		padding-bottom: 20px;
 		text-align: center;
+		&:hover {
+			background: #293449;
+		}
 		&:after {
 		content: '';
 		position: absolute;
