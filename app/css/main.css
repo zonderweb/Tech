@@ -449,7 +449,15 @@ body {
       display: block;
       padding-top: 20px;
       padding-bottom: 20px;
-      text-align: center; } }
+      text-align: center; }
+      .menu-trigger:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: #EB2834;
+        bottom: -5px;
+        left: 0; } }
 
 .menu-main__list {
   padding: 0;
@@ -473,6 +481,9 @@ body {
   text-align: center;
   vertical-align: bottom;
   height: 55px; }
+  @media screen and (max-width: 768px) {
+    .menu-main__item {
+      display: block; } }
 
 .menu-main__link {
   color: #fff;

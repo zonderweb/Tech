@@ -278,6 +278,15 @@ body {
 		padding-top: 20px;
 		padding-bottom: 20px;
 		text-align: center;
+		&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 5px;
+		background: #EB2834;
+		bottom: -5px;
+		left: 0;
+		}
 	}
 }
 .menu-main__list {
@@ -304,6 +313,9 @@ body {
 	text-align: center;
 	vertical-align: bottom;
 	height: 55px;
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
 }
 
 .menu-main__link {
