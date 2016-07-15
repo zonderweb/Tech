@@ -23,15 +23,12 @@ body {
 	padding: 10px 5.3191%;
 	font-weight: 700;
 	position: relative;
-
 	&:hover {
 		background:#ca2c37;
-
 		&:after {
 			background:#9a212a;
 		}
 	}
-
 	&:after {
 		content: '';
 		position: absolute;
@@ -40,6 +37,12 @@ body {
 		height: 5px;
 		bottom: -5px;
 		left: 0;
+	}
+	@media screen and (max-width: 925px) {
+		@include cf;
+		float: none;
+		text-align: center;
+		margin-bottom: 5px;
 	}
 }
 
