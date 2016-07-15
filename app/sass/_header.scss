@@ -268,10 +268,21 @@ body {
 	background: #32425c;
 
 }
+.menu-trigger {
+	color: $white-text;
+	text-decoration: none;
+	font-size: 1.063em;
+	display: none;
+	@media screen and (max-width: 768px) {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+}
 .menu-main__list {
 		padding: 0;
 		display: table-row;
-
 	&:after {
 		content: '';
 		position: absolute;
@@ -280,6 +291,9 @@ body {
 		background: #293449;
 		bottom: -5px;
 		left: 0;
+	}
+	@media screen and (max-width: 768px) {
+		display: none;
 	}
 }
 

@@ -17,3 +17,16 @@ $('#tab-container').easytabs({
 
 // form "write us"
 $('.btn-writeus').magnificPopup();
+
+// Скрытие меню при 768px
+$(document).ready(function() {
+  $('.menu-trigger').click(function() {
+    $('nav ul').slideToggle(768);
+  });//end slide toggle
+  
+  $(window).resize(function() {		
+		if (  $(window).width() > 768 ) {			
+			$('nav ul').removeAttr('style');
+		 }
+	});//end resize
+});//end ready

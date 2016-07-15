@@ -439,6 +439,18 @@ body {
     display: block;
     clear: both; }
 
+.menu-trigger {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.063em;
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .menu-trigger {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center; } }
+
 .menu-main__list {
   padding: 0;
   display: table-row; }
@@ -450,6 +462,9 @@ body {
     background: #293449;
     bottom: -5px;
     left: 0; }
+  @media screen and (max-width: 768px) {
+    .menu-main__list {
+      display: none; } }
 
 .menu-main__item {
   display: table-cell;
