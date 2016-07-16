@@ -177,6 +177,14 @@
 .feedback-info {
 	@include span(4 last);
 }
+.site-info,
+.social-btn,
+.feedback-info {
+	@media screen and (max-width: 635px) {
+		@include span(12);
+	}
+}
+
 .form-popup {
 	@include container();
 	padding: 0 0.625em;

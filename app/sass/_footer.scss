@@ -83,10 +83,16 @@
 	color: $white-text;
 	font-size: 1em;
 	line-height: 1.125em;
+	@media screen and (max-width: 635px) {
+		text-align: center;
+	}
 }
 .footer-bottom__wrapper {
 	padding-top: 35px;
 	padding-bottom: 35px;
+	@media screen and (max-width: 635px) {
+		padding-top: 15px;
+	}
 }
 .social-btn {
 	margin-top: 10px;
@@ -124,7 +130,4 @@
 		color: $main-red;
 		text-decoration: none;
 	}
-}
-.desing-info {
-	padding-left: 2.6595%;
 }

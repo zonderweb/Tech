@@ -287,6 +287,15 @@
   float: right;
   margin-right: 0; }
 
+@media screen and (max-width: 635px) {
+  .site-info,
+  .social-btn,
+  .feedback-info {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
+
 .form-popup {
   max-width: 960px;
   margin-left: auto;
@@ -1285,10 +1294,16 @@ body {
   color: #fff;
   font-size: 1em;
   line-height: 1.125em; }
+  @media screen and (max-width: 635px) {
+    .footer-bottom {
+      text-align: center; } }
 
 .footer-bottom__wrapper {
   padding-top: 35px;
   padding-bottom: 35px; }
+  @media screen and (max-width: 635px) {
+    .footer-bottom__wrapper {
+      padding-top: 15px; } }
 
 .social-btn {
   margin-top: 10px; }
@@ -1322,9 +1337,6 @@ body {
   .footer-bottom__link:focus {
     color: #ee3643;
     text-decoration: none; }
-
-.desing-info {
-  padding-left: 2.6595%; }
 
 .hiden-form {
   display: none; }
