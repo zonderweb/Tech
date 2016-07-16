@@ -216,11 +216,23 @@
   width: 57.44688%;
   float: left;
   margin-right: 2.1275%; }
+  @media screen and (max-width: 620px) {
+    .info-main {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .contacts-main {
   width: 40.42563%;
   float: right;
   margin-right: 0; }
+  @media screen and (max-width: 620px) {
+    .contacts-main {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .footer-adress {
   width: 31.915%;
@@ -1064,15 +1076,33 @@ body {
     font-size: 0.813em;
     line-height: 1.500em;
     margin-bottom: 25px; }
+  @media screen and (max-width: 620px) {
+    .info-company__wrapper {
+      margin-bottom: 40px; } }
+
+@media screen and (max-width: 620px) {
+  .info-main {
+    margin-bottom: 40px; }
+    .info-main:after {
+      content: "";
+      display: block;
+      clear: both; } }
 
 .info-company {
   background: #fff;
   padding-top: 80px; }
+  @media screen and (max-width: 620px) {
+    .info-company {
+      padding-top: 40px; } }
 
 .info__title {
   font-size: 1.875em;
   text-transform: uppercase;
   line-height: 1.500em; }
+  @media screen and (max-width: 620px) {
+    .info__title {
+      display: table;
+      margin: 0 auto; } }
 
 .info-list {
   padding: 0;
@@ -1121,13 +1151,27 @@ body {
 
 .contacts-main {
   padding-left: 6.38313%; }
+  @media screen and (max-width: 620px) {
+    .contacts-main {
+      padding-left: 0; }
+      .contacts-main:after {
+        content: "";
+        display: block;
+        clear: both; } }
 
 .contacts-main__wrapper {
   padding-left: 6.66613%; }
+  @media screen and (max-width: 620px) {
+    .contacts-main__wrapper {
+      padding-left: 0; } }
 
 .info-map {
   max-width: 100%;
   margin-bottom: 40px; }
+  @media screen and (max-width: 620px) {
+    .info-map {
+      width: 100%;
+      margin-bottom: 20px; } }
 
 .btn-writeus {
   width: 100%;

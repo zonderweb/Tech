@@ -132,9 +132,15 @@
 }
 .info-main {
 	@include span(7);
+	@media screen and(max-width: 620px) {
+		@include span(12);
+	}
 }
 .contacts-main {
 	@include span(5 last);
+	@media screen and (max-width: 620px) {
+		@include span(12);
+	}
 }
 .footer-adress {
 	@include span(4);

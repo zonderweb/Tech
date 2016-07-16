@@ -8,15 +8,33 @@
 		line-height: 1.500em;
 		margin-bottom: 25px;
 	}
+	@media screen and (max-width: 620px) {
+		margin-bottom: 40px;
+	}
+}
+.info-main {
+	@media screen and (max-width: 620px) {
+		@include cf;
+		margin-bottom: 40px;
+
+	}
 }
 .info-company {
 	background:#fff;
 	padding-top: 80px;
+	@media screen and (max-width: 620px) {
+		padding-top: 40px;
+	}
+
 }
 .info__title {
 	font-size: 1.875em;
 	text-transform: uppercase;
 	line-height: 1.500em;
+	@media screen and (max-width: 620px) {
+		display: table;
+		margin: 0 auto;
+	}
 }
 .info-list {
 	padding: 0;
@@ -57,13 +75,24 @@
 }
 .contacts-main {
 	padding-left: span(1);
+	@media screen and (max-width: 620px) {
+		@include cf;
+		padding-left: 0;
+	}
 }
 .contacts-main__wrapper {
 	padding-left: gutter(4);
+	@media screen and (max-width: 620px) {
+		padding-left: 0;
+	}
 }
 .info-map {
 	max-width: 100%;
 	margin-bottom: 40px;
+	@media screen and (max-width: 620px) {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 .btn-writeus {
 	width: 100%;
