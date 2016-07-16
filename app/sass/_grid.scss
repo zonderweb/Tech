@@ -50,12 +50,41 @@
 .widget-equipment {
 	@include span(4 last);
 }
+.widget-materials,
+.widget-tool,
+.widget-equipment {
+	@media screen and (max-width: 580px) {
+		@include span(12);
+	}
+}
 
 .slider-wrapper {
 	@include span(8);
+	@media screen and (max-width: 846px) {
+		@include span(12);
+	}
 }
 .widget-wrapper {
 	@include span(4 last);
+	@media screen and (max-width: 846px) {
+		@include span(12);
+	}
+}
+.widget-discounts {
+	@media screen and (max-width: 846px) {
+		@include span(6);
+	}
+}
+.widget-shiping {
+	@media screen and (max-width: 846px) {
+		@include span(6 last);
+	}
+}
+.widget-discounts,
+.widget-shiping {
+	@media screen and (max-width: 550px) {
+		@include span(12);
+	}
 }
 
 .cart__product {
