@@ -261,6 +261,9 @@ body {
 // МЕНЮ
 .menu-box {
 	padding-bottom: 60px;
+	@media screen and (max-width: 768px) {
+		padding-bottom: 30px;
+	}
 }
 .menu-main {
 	position: relative;

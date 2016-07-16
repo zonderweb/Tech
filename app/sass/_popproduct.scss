@@ -11,7 +11,7 @@
 	padding: 25px;
 	background: rgb(247, 243, 236);
 	@include cf;
-	@media screen and (max-width: 620px) {
+	@media screen and (max-width: 768px) {
 		text-align: center;
 		padding-top: 13px;
 	}
@@ -22,7 +22,7 @@
 	color: rgb(50, 66, 92);
 	font-size: 1.875em;
 	text-transform: uppercase;
-	@media screen and (max-width: 620px) {
+	@media screen and (max-width: 768px) {
 		float: none;
 		margin-bottom: 15px;
 	}
@@ -37,8 +37,11 @@
 	&:active {
 		@include btnred-active;
 	}
-	@media screen and (max-width: 620px) {
+	@media screen and (max-width: 768px) {
 		float: none;
+	}
+	@media screen and (max-width: 420px) {
+		padding: 10px;
 	}
 }
 

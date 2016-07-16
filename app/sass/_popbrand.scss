@@ -1,5 +1,8 @@
 .pop-brand {
 	margin-bottom: 65px;
+	@media screen and (max-width: 768px) {
+		margin-bottom: 0;
+	}
 }
 .gallery-brand__item {
 	border: 1px solid #e5e5e5;

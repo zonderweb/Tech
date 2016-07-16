@@ -108,11 +108,14 @@
 
 .gallery-brand__item {
 	@include span(3);
-	&:nth-child(4) {
+	&:nth-child(4n) {
 		@include span(3 last);
 	}
-	&:nth-child(8) {
-		@include span(3 last);
+	@media screen and (max-width: 620px) {
+		@include span(6);
+		&:nth-child(2n) {
+			@include span(6 last);
+		}
 	}
 }
 .tab-items {
