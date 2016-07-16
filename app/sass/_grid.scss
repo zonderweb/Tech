@@ -92,6 +92,18 @@
 	&:nth-child(4) {
 		@include span(3 last)
 	}
+	@media screen and (max-width: 768px) {
+		@include span(6);
+		&:nth-child(2n) {
+			@include span(6 last);
+		}
+	}
+	@media screen and (max-width: 420px) {
+		@include span(12);
+		&:nth-child(2n) {
+			@include span(12);
+		}
+	}
 }
 
 .gallery-brand__item {

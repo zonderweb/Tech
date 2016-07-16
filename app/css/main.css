@@ -153,6 +153,26 @@
     width: 23.40438%;
     float: right;
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .cart__product {
+      width: 48.93625%;
+      float: left;
+      margin-right: 2.1275%; }
+      .cart__product:nth-child(2n) {
+        width: 48.93625%;
+        float: right;
+        margin-right: 0; } }
+  @media screen and (max-width: 420px) {
+    .cart__product {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .cart__product:nth-child(2n) {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; } }
 
 .gallery-brand__item {
   width: 23.40438%;
@@ -755,6 +775,10 @@ body {
 .pop-product__box {
   margin-bottom: 2.1275%; }
 
+@media screen and (max-width: 768px) {
+  .pop-product {
+    margin-bottom: 0; } }
+
 .pop-product__header {
   padding: 25px;
   background: #f7f3ec; }
@@ -762,6 +786,10 @@ body {
     content: "";
     display: block;
     clear: both; }
+  @media screen and (max-width: 620px) {
+    .pop-product__header {
+      text-align: center;
+      padding-top: 13px; } }
 
 .pop-product__title {
   margin: 0;
@@ -769,6 +797,10 @@ body {
   color: #32425c;
   font-size: 1.875em;
   text-transform: uppercase; }
+  @media screen and (max-width: 620px) {
+    .pop-product__title {
+      float: none;
+      margin-bottom: 15px; } }
 
 .pop-product__link {
   color: #fff;
@@ -787,6 +819,9 @@ body {
     background: #eb2834; }
   .pop-product__link:active {
     background: #d9222f; }
+  @media screen and (max-width: 620px) {
+    .pop-product__link {
+      float: none; } }
 
 .cart__product {
   border: 1px solid #e5e5e5;
@@ -868,6 +903,10 @@ body {
 .cart__product:hover .actions {
   display: block; }
 
+@media screen and (max-width: 768px) {
+  .cart__product {
+    margin-bottom: 2.1275%; } }
+
 .cart__img {
   max-width: 100%; }
 
@@ -894,7 +933,7 @@ body {
 .cart__new--price {
   position: relative;
   margin: 10px auto;
-  padding: 10px 13.6363%;
+  padding: 10px 0;
   color: #fff;
   background: #ee3643;
   -webkit-border-radius: 3px;
