@@ -239,12 +239,38 @@
   float: left;
   margin-right: 2.1275%;
   padding-right: 6.38313%; }
+  @media screen and (max-width: 810px) {
+    .footer-adress {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 0; } }
 
 .footer-menu {
   width: 65.9575%;
   float: right;
   margin-right: 0;
   padding-left: 6.38313%; }
+  @media screen and (max-width: 810px) {
+    .footer-menu {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0; } }
+
+@media screen and (max-width: 420px) {
+  .foomenu-top {
+    width: 48.93625%;
+    float: left;
+    margin-right: 2.1275%; } }
+
+@media screen and (max-width: 420px) {
+  .foomenu-bottom {
+    width: 48.93625%;
+    float: right;
+    margin-right: 0; } }
 
 .site-info {
   width: 40.42563%;
@@ -257,12 +283,7 @@
   margin-right: 2.1275%; }
 
 .feedback-info {
-  width: 14.89375%;
-  float: left;
-  margin-right: 2.1275%; }
-
-.desing-info {
-  width: 14.89375%;
+  width: 31.915%;
   float: right;
   margin-right: 0; }
 
@@ -1198,13 +1219,25 @@ body {
   float: left;
   font-size: 1.125em;
   line-height: 1.500em; }
+  @media screen and (max-width: 810px) {
+    .footer-adress p {
+      float: none;
+      text-align: center; } }
 
 .foomenu-top {
   margin: 40px auto; }
+  @media screen and (max-width: 420px) {
+    .foomenu-top {
+      margin: 0; } }
 
 .foomenu-top__list,
 .foomenu-bottom__list {
   display: table-row; }
+  @media screen and (max-width: 420px) {
+    .foomenu-top__list,
+    .foomenu-bottom__list {
+      display: block;
+      padding-left: 20px; } }
 
 .foomenu-top__item,
 .foomenu-bottom__item {
@@ -1213,6 +1246,15 @@ body {
   width: auto;
   text-align: right;
   vertical-align: bottom; }
+  @media screen and (max-width: 810px) {
+    .foomenu-top__item,
+    .foomenu-bottom__item {
+      text-align: center; } }
+  @media screen and (max-width: 420px) {
+    .foomenu-top__item,
+    .foomenu-bottom__item {
+      display: block;
+      text-align: left; } }
 
 .foomenu-top__link,
 .foomenu-bottom__link {
@@ -1229,6 +1271,11 @@ body {
   .foomenu-top__link:active,
   .foomenu-bottom__link:active {
     opacity: .5; }
+  @media screen and (max-width: 420px) {
+    .foomenu-top__link,
+    .foomenu-bottom__link {
+      display: inline-block;
+      width: auto; } }
 
 .foomenu-bottom__link {
   color: #ffd180; }

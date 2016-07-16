@@ -145,10 +145,28 @@
 .footer-adress {
 	@include span(4);
 	padding-right: span(1);
+	@media screen and (max-width: 810px) {
+		@include span(12);
+		padding-right: 0;
+	}
 }
 .footer-menu {
 	@include span(8 last);
 	padding-left: span(1);
+	@media screen and (max-width: 810px) {
+		@include span(12);
+		padding-left: 0;
+	}
+}
+.foomenu-top {
+	@media screen and (max-width: 420px) {
+		@include span (6 of 12);
+	}
+}
+.foomenu-bottom{
+	@media screen and (max-width: 420px) {
+		@include span (6 of 12 last);
+	}
 }
 .site-info {
 	@include span(5);
@@ -157,10 +175,7 @@
 	@include span(3);
 }
 .feedback-info {
-	@include span(2);
-}
-.desing-info {
-	@include span(2 last);
+	@include span(4 last);
 }
 .form-popup {
 	@include container();
