@@ -205,3 +205,11 @@
 .tovar-box {
 	@include span(9 last);
 }
+
+.product-item {
+	@include span(3 of 9);
+	margin-bottom: gutter(7);
+	&:nth-child(3n) {
+		@include span(3 of 9 last);
+	}
+}

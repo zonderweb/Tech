@@ -1,4 +1,6 @@
-.tovar-box {}
+.tovar-box {
+	margin-bottom: 60px;
+}
 .tovar-box__filter {
 	@include cf;
 	background: $filter-bg;
@@ -65,7 +67,42 @@
 			display: block;
 		}
 	}
-	@media screen and (max-width: 768px) {
-		margin-bottom: gutter();
+}
+
+// Пагинация
+.pagination {}
+.pagination__list {
+	padding: 0;
+	margin: 0;
+}
+.pagination__item {
+	list-style-type: none;
+	float: left;
+	font-family: $font-sans;
+	font-size: 0.750em;
+	line-height: 1.125em;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+.pagination__item--active {
+	background: $logo-red;
+	border: 1px solid $logo-red;
+	color: $white-text;
+	padding: 10px 15px;
+	border-radius: 4px;
+	font-weight: 700;
+}
+.pagination__link {
+	text-decoration: none;
+	color: $black;
+	border: 1px solid #e6e6e6;
+	border-radius: 4px;
+	padding: 10px 15px;
+	display: block;
+	&:hover {
+		border: 1px solid #bac7cb;
+	}
+	&:active {
+		border: 1px solid #ff3342;
 	}
 }
