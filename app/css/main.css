@@ -14,7 +14,10 @@
 .servises-tab,
 .info-company__wrapper,
 .footer-top__wrapper,
-.footer-bottom__wrapper {
+.footer-bottom__wrapper,
+.breadcrumbs-box,
+.category-title__wrapper,
+.catalog-desc__wrapper {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -31,7 +34,10 @@
   .servises-tab:after,
   .info-company__wrapper:after,
   .footer-top__wrapper:after,
-  .footer-bottom__wrapper:after {
+  .footer-bottom__wrapper:after,
+  .breadcrumbs-box:after,
+  .category-title__wrapper:after,
+  .catalog-desc__wrapper:after {
     content: " ";
     display: block;
     clear: both; }
@@ -317,7 +323,7 @@ body {
   font-family: "Cuprum", sans-serif; }
 
 .header {
-  background: #f1f5f7; }
+  background: #f1f6f8; }
 
 .top-panel {
   background: #293449;
@@ -1473,3 +1479,59 @@ button.mfp-close {
 .mfp-bg {
   background: transparent;
   opacity: none; }
+
+.main-catalog {
+  margin-top: 0; }
+
+.breadcrumbs {
+  padding: 25px 0; }
+  .breadcrumbs:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.breadcrumbs__list {
+  padding: 0;
+  margin: 0; }
+
+.breadcrumbs__item {
+  font-size: 0.750em;
+  line-height: 1.125em;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  float: left;
+  list-style-type: none; }
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: #000;
+  padding-right: 15px; }
+  .breadcrumbs__link:after {
+    content: '\3e';
+    font-family: "symbols-technomart";
+    padding-left: 15px;
+    color: #c0c7cf; }
+  .breadcrumbs__link i {
+    color: #c0c7cf;
+    font-size: 1.25em; }
+    .breadcrumbs__link i:hover {
+      color: #ee3643; }
+  .breadcrumbs__link:hover {
+    color: #ee3643; }
+    .breadcrumbs__link:hover:after {
+      color: #ee3643; }
+
+.category-title__wrapper {
+  margin-bottom: 20px; }
+  .category-title__wrapper p {
+    line-height: 1.500em; }
+
+.category-title {
+  background: #f1f6f8;
+  padding: 25px 30px; }
+
+.category-title__name {
+  float: none; }
+
+.desc-title {
+  font-weight: 500; }

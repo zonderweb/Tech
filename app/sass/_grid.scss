@@ -10,7 +10,10 @@
 .servises-tab,
 .info-company__wrapper,
 .footer-top__wrapper,
-.footer-bottom__wrapper {
+.footer-bottom__wrapper,
+.breadcrumbs-box,
+.category-title__wrapper,
+.catalog-desc__wrapper {
 	@include container();
 	padding: 0 0.625em;
 }
