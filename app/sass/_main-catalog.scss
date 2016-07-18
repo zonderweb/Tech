@@ -1,0 +1,50 @@
+.tovar-box {}
+.tovar-box__filter {
+	@include cf;
+	background: $filter-bg;
+	padding: 15px 20px 13px 20px;
+	text-transform: uppercase;
+	font-family: $font-sans;
+	font-size: 0.750em;
+	line-height: 1.125em;
+	margin-bottom: 20px;
+}
+.sort__title {
+	float: left;
+}
+.sort__wrapper {
+	float: right;
+}
+.sort-menu {
+	padding: 0;
+	margin: 0;
+}
+.sort-menu__item {
+	float: left;
+	list-style-type: none;
+	margin-left: 60px;
+	&:last-child,
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.sort-menu__link {
+	text-decoration: none;
+	color: rgba(0,0,0, .3);
+	border-bottom: 1px dashed $logo-red;
+	i {
+		border-bottom: 1px solid $filter-bg;
+		font-size: 1.250em;
+		&:hover {
+			border-bottom: 1px solid $logo-red;
+		}
+	}
+	&:hover {
+		color: $black;
+		border-bottom: 1px solid $logo-red;
+	}
+}
+.sort-menu__link--active {
+	color: $main-red;
+	border-bottom: none;
+}
