@@ -7,3 +7,67 @@
 	line-height: 1.125em;
 	margin-bottom: 20px;
 }
+
+// фильтр товаров
+.filter-form {}
+.range-filter {
+	width: 100%;
+}
+.range-controls {
+	position: relative;
+	height: 80px;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	background: $filter-bg;
+	border-radius: 4px;
+	overflow: hidden;
+	.scale {
+		margin-top: 39px;
+		height: 2px;
+		background: #d6dddf;
+	}
+	.bar {
+		height: 2px;
+		background: #00cb6f;
+	}
+	.toogle {
+		width: 20px;
+		height: 20px;
+		border: 8px solid #fff;
+		background: #ababab;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		cursor: pointer;
+		border-radius: 50%;
+		box-shadow: 0 2px 1px 0 #cfcfcf;
+	}
+	.max-toogle {
+		left: 145px;
+	}
+}
+.price-controls {
+	@include cf;
+	input {
+		background: $filter-bg;
+		border: none;
+		text-align: center;
+		width: 43.1818%;
+		padding: 10px;
+		font-family: $font-sans;
+		font-size: 1.000em;
+		line-height: 1.125em;
+		border-radius: 4px;
+	}
+	.min-price {
+		float: left;
+		margin-right: 10px;
+	}
+	.max-price {
+		float: right;
+	}
+	span {
+		margin-top: 8px;
+		display: inline-block;
+	}
+}

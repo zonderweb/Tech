@@ -1439,6 +1439,69 @@ button.mfp-close {
   line-height: 1.125em;
   margin-bottom: 20px; }
 
+.range-filter {
+  width: 100%; }
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  background: #f9f3ec;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  overflow: hidden; }
+  .range-controls .scale {
+    margin-top: 39px;
+    height: 2px;
+    background: #d6dddf; }
+  .range-controls .bar {
+    height: 2px;
+    background: #00cb6f; }
+  .range-controls .toogle {
+    width: 20px;
+    height: 20px;
+    border: 8px solid #fff;
+    background: #ababab;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+            box-shadow: 0 2px 1px 0 #cfcfcf; }
+  .range-controls .max-toogle {
+    left: 145px; }
+
+.price-controls:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.price-controls input {
+  background: #f9f3ec;
+  border: none;
+  text-align: center;
+  width: 43.1818%;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.000em;
+  line-height: 1.125em;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+
+.price-controls .min-price {
+  float: left;
+  margin-right: 10px; }
+
+.price-controls .max-price {
+  float: right; }
+
+.price-controls span {
+  margin-top: 8px;
+  display: inline-block; }
+
 .tovar-box {
   margin-bottom: 60px; }
 
