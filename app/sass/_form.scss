@@ -48,19 +48,29 @@ button.mfp-close {
 }
 .inp-name__wrapper {
 	float:left;
+	@media screen and (max-width: 620px) {
+		float: none;
+		margin-bottom: 20px;
+	}
 }
 .inp-name__wrapper,
-.inp-email__wrapper{
+.inp-email__wrapper {
 	width: 47.8260%;
+	@media screen and (max-width: 620px) {
+		width: 100%;
+	}
 }
 .inp-email__wrapper {
 	float: right;
+	@media screen and (max-width: 620px) {
+		float: none;
+	}
 }
 .inp-textarea__wrapper {
 	@include break;
 }
 .btn-form-wrapper {
-	background: #F1F1F1;
+	background: #f1f1f1;
 	padding: 37px 12.9032%;
 }
 .inp-textarea__wrapper {
@@ -80,17 +90,23 @@ button.mfp-close {
 		border: none;
 		color: #000;
 		cursor: pointer;
+		@media screen and (max-width: 420px) {
+			float: none;
+			width: 100%;
+		}
 	}
 	.btn-push {
 		@include btnred;
 		float: left;
-	}
-	.btn-push {
 		&:hover {
 			@include btnred-hover;
 		}
 		&:active {
 			@include btnred-active;
+		}
+		@media screen and (max-width: 420px) {
+			float: none;
+			margin-bottom: 10px;
 		}
 	}
 }

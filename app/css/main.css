@@ -1389,19 +1389,30 @@ button.mfp-close {
 
 .inp-name__wrapper {
   float: left; }
+  @media screen and (max-width: 620px) {
+    .inp-name__wrapper {
+      float: none;
+      margin-bottom: 20px; } }
 
 .inp-name__wrapper,
 .inp-email__wrapper {
   width: 47.8260%; }
+  @media screen and (max-width: 620px) {
+    .inp-name__wrapper,
+    .inp-email__wrapper {
+      width: 100%; } }
 
 .inp-email__wrapper {
   float: right; }
+  @media screen and (max-width: 620px) {
+    .inp-email__wrapper {
+      float: none; } }
 
 .inp-textarea__wrapper {
   clear: both; }
 
 .btn-form-wrapper {
-  background: #F1F1F1;
+  background: #f1f1f1;
   padding: 37px 12.9032%; }
 
 .inp-textarea__wrapper {
@@ -1433,6 +1444,10 @@ button.mfp-close {
   border: none;
   color: #000;
   cursor: pointer; }
+  @media screen and (max-width: 420px) {
+    .btn-form-wrapper button {
+      float: none;
+      width: 100%; } }
 
 .btn-form-wrapper .btn-push {
   color: #fff;
@@ -1446,12 +1461,14 @@ button.mfp-close {
   font-size: 0.875em;
   line-height: 1.125em;
   float: left; }
-
-.btn-form-wrapper .btn-push:hover {
-  background: #eb2834; }
-
-.btn-form-wrapper .btn-push:active {
-  background: #d9222f; }
+  .btn-form-wrapper .btn-push:hover {
+    background: #eb2834; }
+  .btn-form-wrapper .btn-push:active {
+    background: #d9222f; }
+  @media screen and (max-width: 420px) {
+    .btn-form-wrapper .btn-push {
+      float: none;
+      margin-bottom: 10px; } }
 
 .mfp-bg {
   background: transparent;
