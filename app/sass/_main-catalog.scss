@@ -48,3 +48,24 @@
 	color: $main-red;
 	border-bottom: none;
 }
+
+// Основные карточки товара 
+.product-items {}
+.product-item {
+	border: 1px solid #e5e5e5;
+	position: relative;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.250em;
+	.actions {
+		display: none;
+	}
+	&:hover {
+		.actions {
+			display: block;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		margin-bottom: gutter();
+	}
+}

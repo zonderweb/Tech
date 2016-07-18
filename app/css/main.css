@@ -1476,6 +1476,20 @@ button.mfp-close {
   color: #ee3643;
   border-bottom: none; }
 
+.product-item {
+  border: 1px solid #e5e5e5;
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.250em; }
+  .product-item .actions {
+    display: none; }
+  .product-item:hover .actions {
+    display: block; }
+  @media screen and (max-width: 768px) {
+    .product-item {
+      margin-bottom: 2.1275%; } }
+
 .footer-top {
   background: #25405d;
   color: #fff;
