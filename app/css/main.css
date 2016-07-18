@@ -1083,7 +1083,10 @@ body {
             border-radius: 3px;
     margin-top: 33px; }
     .tab-info__wrapper a:hover {
-      background: #ca2c37; }
+      background: #eb2834; }
+    @media screen and (max-width: 805px) {
+      .tab-info__wrapper a {
+        width: 100%; } }
 
 .tab-body__title {
   color: #32425c;
