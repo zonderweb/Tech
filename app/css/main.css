@@ -1333,6 +1333,15 @@ button.mfp-close {
     width: 100%; }
   .input-form__wrapper textarea {
     min-height: 110px; }
+  .input-form__wrapper img,
+  .input-form__wrapper span {
+    display: inline-block;
+    vertical-align: middle; }
+  .input-form__wrapper img {
+    margin-right: 30px; }
+  .input-form__wrapper span {
+    font-size: 1.750em;
+    line-height: 1.125em; }
 
 .inp-name__wrapper {
   float: left; }
@@ -1416,6 +1425,9 @@ button.mfp-close {
     .btn-form-wrapper .btn-push {
       float: none;
       margin-bottom: 10px; } }
+
+.btn-form-wrapper .btn-to-send {
+  background: #d32430; }
 
 .mfp-bg {
   background: transparent;

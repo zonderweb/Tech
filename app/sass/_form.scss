@@ -45,6 +45,18 @@ button.mfp-close {
 	textarea {
 		min-height: 110px;
 	}
+	img,
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	img {
+		margin-right: 30px;
+	}
+	span {
+		font-size: 1.750em;
+		line-height: 1.125em;
+	}
 }
 .inp-name__wrapper {
 	float:left;
@@ -108,6 +120,9 @@ button.mfp-close {
 			float: none;
 			margin-bottom: 10px;
 		}
+	}
+	.btn-to-send {
+		background: #d32430;
 	}
 }
 // bg для заднего фона всплывающей формы

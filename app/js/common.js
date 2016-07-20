@@ -17,6 +17,8 @@ $('#tab-container').easytabs({
 
 // form "write us"
 $('.btn-writeus').magnificPopup();
+// Pop up shoping cart
+$('.btn-buy').magnificPopup();
 
 // Скрытие меню при 768px
 $(document).ready(function() {
