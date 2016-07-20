@@ -128,27 +128,73 @@
 				<div class="filter-box">
 					<div class="filter-title">Фильтр:</div>
 
-					<form action="filtr.html" class="filter-form">
-						<span class="form__title">Цена:</span>
-						<a href="#" class="turn-off"><i class="icon-down"></i></a>
-						<div class="range-filter">
-							<div class="range-controls">
-								<div class="scale">
-									<div class="bar" style="width:70%;">
+					<form action="/filter" method="get" class="filter-form">
+						<div class="block-form__wrapper">
+							<div class="block-filter__name">
+								<span>Цена:</span>
+								<a href="#" class="turn-off"><i class="icon-up"></i></a>
+							</div>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar" style="width:70%;">
+											
+										</div>
+									</div>
+									<div class="toogle min-toogle">
+										
+									</div>
+									<div class="toogle max-toogle">
 										
 									</div>
 								</div>
-								<div class="toogle min-toogle">
-									
-								</div>
-								<div class="toogle max-toogle">
-									
+								<div class="price-controls">
+									<input type="text" class="min-price" value="0">
+									<span> - </span>
+									<input type="text" class="max-price" value="15 000">
 								</div>
 							</div>
-							<div class="price-controls">
-								<input type="text" class="min-price" value="0">
-								<span> - </span>
-								<input type="text" class="max-price" value="15 000">
+						</div>
+
+						<div class="block-form__wrapper">
+							<div class="block-filter__name">
+								<span>Производители:</span>
+								<a href="#" class="turn-off"><i class="icon-up"></i></a>
+							</div>
+							<div class="input--label__item">
+								<input type="checkbox" name="manufac" id="bosch">
+								<label for="bosch">Bosch</label>
+							</div>
+							<div class="input--label__item">
+								<input type="checkbox" name="manufac" checked="checked" id="interscol">
+								<label for="interscol">Интерскол</label>
+							</div>
+							<div class="input--label__item">
+								<input type="checkbox" name="manufac" id="makita">
+								<label for="makita">Makita</label>
+							</div>
+							<div class="input--label__item">
+								<input type="checkbox" name="manufac" checked="checked" id="dewalt">
+								<label for="dewalt">Dewalt</label>
+							</div>
+							<div class="input--label__item">
+								<input type="checkbox" name="manufac" id="hitachi">
+								<label for="hitachi">Hitachi</label>
+							</div>
+						</div>
+
+						<div class="block-form__wrapper">
+							<div class="block-filter__name">
+								<span>Питание:</span>
+								<a href="#" class="turn-off"><i class="icon-up"></i></a>
+							</div>
+							<div class="input--label__item">
+								<input type="radio" name="type" checked="checked" id="acum">
+								<label for="acum">Аккумуляторные</label>
+							</div>
+							<div class="input--label__item">
+								<input type="radio" name="type" id="network">
+								<label for="network">Сетевые</label>
 							</div>
 						</div>
 					</form>
