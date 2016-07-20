@@ -13,9 +13,17 @@
 }
 .sort__title {
 	float: left;
+	@media screen and (max-width: 790px) {
+		float: none;
+		display: block;
+		margin-bottom: 10px;
+	}
 }
 .sort__wrapper {
 	float: right;
+	@media screen and (max-width: 790px) {
+		float: none;
+	}
 }
 .sort-menu {
 	padding: 0;
@@ -28,6 +36,9 @@
 	&:last-child,
 	&:first-child {
 		margin-left: 0;
+	}
+	@media screen and (max-width: 790px) {
+		margin-left: 20px;
 	}
 }
 .sort-menu__link {
@@ -70,7 +81,9 @@
 }
 
 // Пагинация
-.pagination {}
+.pagination {
+	@include break;
+}
 .pagination__list {
 	padding: 0;
 	margin: 0;

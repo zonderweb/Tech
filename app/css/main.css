@@ -325,11 +325,33 @@
   width: 23.40438%;
   float: left;
   margin-right: 2.1275%; }
+  @media screen and (max-width: 768px) {
+    .filter-box {
+      width: 31.915%;
+      float: left;
+      margin-right: 2.1275%; } }
+  @media screen and (max-width: 580px) {
+    .filter-box {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .tovar-box {
   width: 74.46813%;
   float: right;
   margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .tovar-box {
+      width: 65.9575%;
+      float: right;
+      margin-right: 0; } }
+  @media screen and (max-width: 580px) {
+    .tovar-box {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .product-item {
   width: 31.42872%;
@@ -340,6 +362,31 @@
     width: 31.42872%;
     float: right;
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .product-item {
+      width: 48.38722%;
+      float: left;
+      margin-right: 3.22556%; }
+      .product-item:nth-child(2n) {
+        width: 48.38722%;
+        float: right;
+        margin-right: 0; }
+      .product-item:nth-child(3), .product-item:last-child {
+        width: 48.38722%;
+        float: left;
+        margin-right: 3.22556%;
+        float: left; } }
+  @media screen and (max-width: 420px) {
+    .product-item {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .product-item:nth-child(2n), .product-item:nth-child(3), .product-item:last-child {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; } }
 
 body {
   font-family: "Cuprum", sans-serif; }
@@ -1528,7 +1575,7 @@ button.mfp-close {
     content: '\2610';
     font-family: "symbols-technomart";
     padding-right: 10px;
-    color: #c1c1c1;
+    color: #c2c2c2;
     font-size: 1.625em;
     display: inline-block;
     vertical-align: middle; }
@@ -1569,9 +1616,17 @@ button.mfp-close {
 
 .sort__title {
   float: left; }
+  @media screen and (max-width: 790px) {
+    .sort__title {
+      float: none;
+      display: block;
+      margin-bottom: 10px; } }
 
 .sort__wrapper {
   float: right; }
+  @media screen and (max-width: 790px) {
+    .sort__wrapper {
+      float: none; } }
 
 .sort-menu {
   padding: 0;
@@ -1583,6 +1638,9 @@ button.mfp-close {
   margin-left: 60px; }
   .sort-menu__item:last-child, .sort-menu__item:first-child {
     margin-left: 0; }
+  @media screen and (max-width: 790px) {
+    .sort-menu__item {
+      margin-left: 20px; } }
 
 .sort-menu__link {
   text-decoration: none;
@@ -1611,6 +1669,9 @@ button.mfp-close {
     display: none; }
   .product-item:hover .actions {
     display: block; }
+
+.pagination {
+  clear: both; }
 
 .pagination__list {
   padding: 0;

@@ -201,9 +201,21 @@
 
 .filter-box {
 	@include span(3);
+	@media screen and (max-width: 768px) {
+		@include span(4);
+	}
+	@media screen and (max-width: 580px) {
+		@include span(12);
+	}
 }
 .tovar-box {
 	@include span(9 last);
+	@media screen and (max-width: 768px) {
+		@include span(8 last);
+	}
+	@media screen and (max-width: 580px) {
+		@include span(12);
+	}
 }
 
 .product-item {
@@ -211,5 +223,24 @@
 	margin-bottom: gutter(7);
 	&:nth-child(3n) {
 		@include span(3 of 9 last);
+	}
+	@media screen and (max-width: 768px) {
+		@include span(4 of 8);
+		&:nth-child(2n) {
+			@include span(4 of 8 last);
+		}
+		&:nth-child(3),
+		&:last-child {
+			@include span(4 of 8);
+			float: left;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		@include span(12);
+		&:nth-child(2n),
+		&:nth-child(3),
+		&:last-child {
+			@include span(12);
+		}
 	}
 }
